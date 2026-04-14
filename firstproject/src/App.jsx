@@ -4,20 +4,24 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App(){
-  let data="demo"
-function updata()
-{
-  data="example"
-  alert(data);
+//   let data="demo"
+// function updata()
+// {
+//   data="example"
+//   alert(data);
+// }
+const [data,setdata]=useState("hello")
+function fun(){
+  setdata("changed value");
 }
-   function callfunction()
-         {
-             alert("function call")
-         }
-    const fruit=(name)=>
-    {
-      alert(name)
-    }
+  //  function callfunction()
+  //        {
+  //            alert("function call")
+  //        }
+  //   const fruit=(name)=>
+  //   {
+  //     alert(name)
+    //}
 // function callfunction()
 //         {
 //             alert("function call")
@@ -49,9 +53,12 @@ function updata()
      <button onClick={()=>fruit("first parameter")}>arrow function</button>
      <button onClick={()=>fruit("click on apple")}>apple</button>
      <button onClick={()=>fruit("click on banana")}>banana</button> */}
-     <h1>state in react</h1>
+     {/* <h1>state in react</h1>
      <h1>{data}</h1>
-     <button  onClick={updata}>click to change value</button>
+     <button  onClick={updata}>click to change value</button> */}
+     <h1>state of variable </h1>
+     <h3>{data}</h3>
+     <button onClick={fun}>click</button>
 
     </>
   )
